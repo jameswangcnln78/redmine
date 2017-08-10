@@ -35,17 +35,13 @@ services:
       - DB_USER=redmine
       - DB_PASS=password
       - DB_NAME=redmine_production
-      - SMTP_USER=redmine@your.company.com
-      - SMTP_PASS=your.pass
+      - SMTP_USER=redmine@your.com
+      - SMTP_PASS=
       - SMTP_HOST=smtp.mxhichina.com
-      - SMTP_PORT=465
-      - SMTP_TLS=true
-      - SMTP_STARTTLS=true
+      - SMTP_PORT=587
+      - SMTP_TLS=false
+      - SMTP_STARTTLS=false
       - SMTP_AUTHENTICATION=:login
-      - IMAP_ENABLED=true
-      - IMAP_HOST=imap.mxhichina.com
-      - IMAP_INTERVAL=10
-      - IMAP_PORT=143
       - NGINX_MAX_UPLOAD_SIZE=100M
     depends_on:
       - db
