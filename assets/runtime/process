@@ -1,0 +1,5 @@
+#!/bin/bash
+FUNCTIONS=${REDMINE_RUNTIME_DIR}/functions
+
+sed -i -- 's/\-\-quiet/--local/g' $FUNCTIONS
+
